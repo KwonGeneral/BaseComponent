@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="example_state_drawables">
+        <item>@drawable/icon_battery_zero</item>
+        <item>@drawable/icon_battery_middle</item>
+        <item>@drawable/icon_battery_full</item>
+    </array>
+</resources>

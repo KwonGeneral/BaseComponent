@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StepperInput">
+        <attr name="allowNegativeValues" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiStateToggleButton">
+        <attr name="state_drawables" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressButton">
+        <attr name="buttonText" format="string" />
+        <attr name="progressColor" format="color" />
+    </declare-styleable>
+</resources>

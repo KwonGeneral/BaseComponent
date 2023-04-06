@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <com.example.basecomponent.widget.PasswordToggleEditText
+            android:id="@+id/passwordToggleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.example.basecomponent.widget.CollapsibleTextView
+            android:id="@+id/collapsibleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.example.basecomponent.widget.StepperInput
+            android:id="@+id/stepperInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:allowNegativeValues="false" />
+
+        <com.example.basecomponent.widget.MultiStateToggleButton
+            android:id="@+id/multiStateToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:state_drawables="@array/example_state_drawables" />
+
+        <com.example.basecomponent.widget.CircularProgressButton
+            android:id="@+id/circularProgressButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonText="Click me"
+            app:progressColor="@color/design_default_color_primary"/>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
